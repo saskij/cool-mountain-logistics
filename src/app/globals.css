@@ -1,26 +1,130 @@
+/* ─── Google Fonts (must be before tailwindcss import) ─── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
+/* ─── Design DNA Theme (Cool Mountain Logistics) ─── */
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Colors — Primary (Navy Blue from logo) */
+  --color-primary-50: #E8EEF7;
+  --color-primary-100: #C5D4EB;
+  --color-primary-200: #9FB8DD;
+  --color-primary-300: #7899CC;
+  --color-primary-400: #5A7FBF;
+  --color-primary-500: #3D65B0;
+  --color-primary-600: #2B5EA7;
+  --color-primary-700: #1F4D8E;
+  --color-primary-800: #1B3A6B;
+  --color-primary-900: #132848;
+  --color-primary-950: #0B1929;
+
+  /* Colors — Accent (Transport Red from original site) */
+  --color-accent-50: #FEF2F3;
+  --color-accent-100: #FDE3E5;
+  --color-accent-200: #FBC8CC;
+  --color-accent-300: #F7A0A7;
+  --color-accent-400: #F06B76;
+  --color-accent-500: #C41230;
+  --color-accent-600: #B00E2A;
+  --color-accent-700: #940C24;
+  --color-accent-800: #7B0D22;
+  --color-accent-900: #690F22;
+  --color-accent-950: #3B040E;
+
+  /* Colors — Neutrals */
+  --color-surface-50: #F8FAFB;
+  --color-surface-100: #F1F5F9;
+  --color-surface-200: #E2E8F0;
+  --color-surface-300: #CBD5E1;
+  --color-surface-400: #94A3B8;
+  --color-surface-500: #64748B;
+  --color-surface-600: #475569;
+  --color-surface-700: #334155;
+  --color-surface-800: #1E293B;
+  --color-surface-900: #0F172A;
+
+  --color-dark: #1A1A2E;
+  --color-muted: #6B7280;
+  --color-background: #FFFFFF;
+  --color-foreground: #1A1A2E;
+
+  /* Fonts */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Border Radius */
+  --radius-btn: 6px;
+  --radius-card: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+
+  /* Box Shadows */
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-header: 0 2px 16px rgba(0, 0, 0, 0.06);
+  --shadow-btn: 0 2px 8px rgba(196, 18, 48, 0.3);
+
+  /* Animation keyframes */
+  --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
+  --animate-slide-in: slide-in 0.3s ease-out forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ─── Base Styles ─── */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Selection Color ─── */
+::selection {
+  background-color: var(--color-primary-200);
+  color: var(--color-primary-900);
+}
+
+/* ─── Scrollbar (Webkit) ─── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-500);
 }

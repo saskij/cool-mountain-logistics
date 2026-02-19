@@ -180,7 +180,7 @@ export default function Header() {
                 ${scrolled ? 'h-16 w-28' : 'h-20 w-32'}
               `}>
                 <Image
-                  src="/images/logo.png"
+                  src="/cool-mountain-logistics/images/logo.png"
                   alt="Cool Mountain Logistics"
                   fill
                   priority
@@ -267,7 +267,7 @@ export default function Header() {
         {/* Centered logo */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/images/logo.png"
+            src="/cool-mountain-logistics/images/logo.png"
             alt="Cool Mountain Logistics"
             width={140}
             height={60}

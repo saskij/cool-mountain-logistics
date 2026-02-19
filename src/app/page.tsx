@@ -10,7 +10,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden">
         {/* Background image */}
         <Image
-          src="/images/hero-bg.png"
+          src="/cool-mountain-logistics/images/hero-bg.png"
           alt="Mountain highway"
           fill
           priority

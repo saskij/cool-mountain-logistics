@@ -42,7 +42,7 @@ export default function RootLayout({
               {/* Col 1 — About */}
               <div className="sm:col-span-2 lg:col-span-1">
                 <Image
-                  src="/images/logo.png"
+                  src="/cool-mountain-logistics/images/logo.png"
                   alt="Cool Mountain Logistics"
                   width={160}
                   height={70}

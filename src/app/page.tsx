@@ -444,7 +444,7 @@ export default function Home() {
                 <div>
                   <p className="text-sm font-bold text-primary-900">USDOT 04371123</p>
                   <p className="text-sm font-bold text-primary-900 mt-0.5">MC 1712055</p>
-                  <p className="text-xs text-muted mt-1">Nampa, Idaho</p>
+                  <p className="text-xs text-muted mt-1">1428 Madison Ave, Nampa, ID 83687</p>
                 </div>
               </div>
 

@@ -40,8 +40,8 @@ export default function ContactPage() {
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" /></svg>
                                     </div>
                                     <div>
-                                        <p className="font-bold text-primary-900">Headquarters</p>
-                                        <p className="text-muted mt-1">Nampa, ID 83651</p>
+                                        <p className="font-bold text-primary-900 mt-1">Office Location</p>
+                                        <p className="text-muted mt-1">1428 Madison Ave, Nampa, ID 83687</p>
                                     </div>
                                 </div>
 
@@ -112,7 +112,7 @@ export default function ContactPage() {
             {/* MAP SECTION */}
             <section className="h-[400px] w-full relative">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d185203.49360879685!2d-116.666986!3d43.585501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54afb7027a42a033%3A0x67341feefa28d844!2sNampa%2C%20ID!5e0!3m2!1sen!2sus!4v1709241600000!5m2!1sen!2sus"
+                    src="https://maps.google.com/maps?q=1428%20Madison%20Avenue%20Nampa%2C%20Idaho%2083687&t=&z=14&ie=UTF8&iwloc=&output=embed"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}

@@ -41,13 +41,15 @@ export default function RootLayout({
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
               {/* Col 1 — About */}
               <div className="sm:col-span-2 lg:col-span-1">
-                <Image
-                  src="/cool-mountain-logistics/images/logo.png"
-                  alt="Cool Mountain Logistics"
-                  width={160}
-                  height={70}
-                  className="h-14 w-auto mb-5"
-                />
+                <Link href="/">
+                  <Image
+                    src="/cool-mountain-logistics/images/logo.png"
+                    alt="Cool Mountain Logistics"
+                    width={160}
+                    height={70}
+                    className="h-14 w-auto mb-5"
+                  />
+                </Link>
                 <p className="text-sm text-primary-300 leading-relaxed">
                   Your premier 3PL partner in the heart of Idaho, connecting
                   shippers with reliable capacity across the lower 48.

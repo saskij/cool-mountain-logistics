@@ -33,6 +33,37 @@ export default function CarriersPage() {
                 </div>
             </section>
 
+            <section className="py-20 bg-surface-50 border-b border-surface-200">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <div className="prose prose-lg prose-primary">
+                            <h2 className="text-3xl font-extrabold text-primary-900 mt-0">Keep Your Trucks Moving</h2>
+                            <p>
+                                We know that empty miles are the enemy of profitability. That&apos;s why Cool Mountain Logistics works hard to provide consistent, high-paying freight on your preferred lanes.
+                            </p>
+                            <p>
+                                When you haul for us, you are not just a truck number. You are part of our operational family. We fight for fair rates, clear communication, and quick turnaround times at the docks.
+                            </p>
+                        </div>
+                        <div className="relative h-[450px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl">
+                            <Image
+                                src="/cool-mountain-logistics/images/hero-bg.png"
+                                alt="Carrier Network"
+                                fill
+                                className="object-cover object-[10%_80%] grayscale-[0.5] contrast-150 saturate-200 sepia-[0.3]"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 to-transparent"></div>
+                            <div className="absolute bottom-6 left-6 right-6">
+                                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+                                    <p className="text-white font-medium text-sm">Respect, reliability, and fast payments for every mile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="py-20 bg-white">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="text-center max-w-2xl mx-auto mb-16">

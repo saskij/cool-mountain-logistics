@@ -35,6 +35,38 @@ export default function ShippersPage() {
                 </div>
             </section>
 
+            {/* IMAGE SECTION */}
+            <section className="py-20 bg-white border-b border-surface-200">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <div className="relative h-[450px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl order-2 lg:order-1">
+                            <Image
+                                src="/cool-mountain-logistics/images/hero-bg.png"
+                                alt="Freight Solutions"
+                                fill
+                                className="object-cover object-[70%_50%] hue-rotate-[160deg] contrast-125 saturate-150"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 to-transparent"></div>
+                            <div className="absolute bottom-6 left-6 right-6">
+                                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+                                    <p className="text-white font-medium text-sm">Dedicated capacity for your most critical shipments.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="prose prose-lg prose-primary order-1 lg:order-2">
+                            <h2 className="text-3xl font-extrabold text-primary-900 mt-0">Scale Your Supply Chain</h2>
+                            <p>
+                                Whether you are a small business looking for your first reliable LTL carrier, or an enterprise shipper needing drop-trailer solutions, we have the capacity and the expertise to scale with you.
+                            </p>
+                            <p>
+                                By tapping into our network of 10,000+ carriers, you avoid the volatility of the spot market and gain a dedicated logistics partner that treats your freight like our own.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* CONTENT */}
             <section className="py-20 bg-surface-50">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

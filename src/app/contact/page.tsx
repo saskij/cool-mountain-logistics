@@ -5,6 +5,14 @@ export default function ContactPage() {
     return (
         <>
             <section className="relative min-h-[50vh] flex flex-col justify-center overflow-hidden pt-24 bg-primary-950">
+                <Image
+                    src="/cool-mountain-logistics/images/hero-bg.png"
+                    alt="Contact Us Background"
+                    fill
+                    priority
+                    className="object-cover object-bottom opacity-30 grayscale saturate-200 sepia-[0.2]"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary-950 via-primary-950/80 to-transparent" />
                 <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 text-center pt-16 pb-12">
                     <p className="text-accent-400 font-bold uppercase tracking-widest mb-3">Connect With Us</p>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight">

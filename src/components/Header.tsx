@@ -5,12 +5,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const servicesDropdown = [
-  { label: 'Full Truckload (FTL)', href: '/services#ftl' },
-  { label: 'Less Than Truckload (LTL)', href: '/services#ltl' },
-  { label: 'Refrigerated', href: '/services#reefer' },
-  { label: 'Flatbed & Stepdeck', href: '/services#flatbed' },
-  { label: 'Heavy Haul', href: '/services#heavy' },
-  { label: 'Drayage', href: '/services#drayage' },
+  { label: 'Full Truckload (FTL)', href: '/services/ftl' },
+  { label: 'Less Than Truckload (LTL)', href: '/services/ltl' },
+  { label: 'Refrigerated', href: '/services/reefer' },
+  { label: 'Flatbed & Stepdeck', href: '/services/flatbed' },
+  { label: 'Heavy Haul', href: '/services/heavy' },
+  { label: 'Drayage', href: '/services/drayage' },
 ];
 
 export default function Header() {

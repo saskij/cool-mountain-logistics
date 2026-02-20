@@ -33,11 +33,11 @@ export default function ServicesPage() {
                             <p className="text-muted text-lg mb-6 leading-relaxed">{svc.desc}</p>
                             <div className="bg-surface-50 p-6 rounded-lg border border-surface-200 flex flex-col md:flex-row gap-6 items-center justify-between">
                                 <div>
-                                    <h4 className="font-bold text-primary-900 mb-1">Ready to ship {svc.title.toLowerCase()}?</h4>
-                                    <p className="text-sm text-muted">Get a competitive quote today and lock in capacity.</p>
+                                    <h4 className="font-bold text-primary-900 mb-1">Learn more about {svc.title.toLowerCase()}</h4>
+                                    <p className="text-sm text-muted">View details, commitments, and request a quote.</p>
                                 </div>
-                                <Link href="/contact" className="bg-primary-900 text-white px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wide hover:bg-primary-800 transition-colors whitespace-nowrap">
-                                    Request Quote
+                                <Link href={`/services/${svc.id}`} className="bg-primary-900 text-white px-6 py-2.5 rounded-full text-sm font-bold uppercase tracking-wide hover:bg-primary-800 transition-colors whitespace-nowrap">
+                                    View Details
                                 </Link>
                             </div>
                         </div>

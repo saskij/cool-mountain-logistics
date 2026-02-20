@@ -203,9 +203,6 @@ export default function Header() {
               <Link href="/track" className={navLinkClasses}>
                 Track Load
               </Link>
-              <Link href="/contact" className={navLinkClasses}>
-                Contact
-              </Link>
 
               {/* CTA */}
               <Link
@@ -352,15 +349,6 @@ export default function Header() {
                 className="flex items-center gap-3 px-4 py-3.5 text-white font-medium text-lg rounded-xl transition-colors duration-200 hover:bg-white/10"
               >
                 Track Load
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center gap-3 px-4 py-3.5 text-white font-medium text-lg rounded-xl transition-colors duration-200 hover:bg-white/10"
-              >
-                Contact
               </Link>
             </li>
           </ul>

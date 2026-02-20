@@ -8,7 +8,7 @@ export default function TrackPage() {
                 {/* Left Side — Image */}
                 <div className="relative w-full min-h-[40vh] md:min-h-screen md:w-5/12 lg:w-1/2">
                     <Image
-                        src="/cool-mountain-logistics/images/hero-bg.png"
+                        src="/cool-mountain-logistics/images/track-load.jpg"
                         alt="Tracking Shipment"
                         fill
                         priority

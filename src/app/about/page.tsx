@@ -38,10 +38,10 @@ export default function AboutPage() {
 
                         <div className="relative h-[450px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl">
                             <Image
-                                src="/cool-mountain-logistics/images/hero-bg.png"
-                                alt="Cool Mountain Logistics Fleet"
+                                src="/cool-mountain-logistics/images/about-us.jpg"
+                                alt="Cool Mountain Logistics Team"
                                 fill
-                                className="object-cover object-[20%_40%] hue-rotate-30 saturate-150"
+                                className="object-cover object-center"
                                 sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary-950/70 to-transparent"></div>

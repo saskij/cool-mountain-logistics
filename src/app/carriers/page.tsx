@@ -47,10 +47,10 @@ export default function CarriersPage() {
                         </div>
                         <div className="relative h-[450px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl">
                             <Image
-                                src="/cool-mountain-logistics/images/hero-bg.png"
+                                src="/cool-mountain-logistics/images/carriers.jpg"
                                 alt="Carrier Network"
                                 fill
-                                className="object-cover object-[10%_80%] grayscale-[0.5] contrast-150 saturate-200 sepia-[0.3]"
+                                className="object-cover object-center"
                                 sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 to-transparent"></div>

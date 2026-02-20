@@ -41,10 +41,10 @@ export default function ShippersPage() {
                     <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                         <div className="relative h-[450px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl order-2 lg:order-1">
                             <Image
-                                src="/cool-mountain-logistics/images/hero-bg.png"
+                                src="/cool-mountain-logistics/images/shippers.jpg"
                                 alt="Freight Solutions"
                                 fill
-                                className="object-cover object-[70%_50%] hue-rotate-[160deg] contrast-125 saturate-150"
+                                className="object-cover object-center"
                                 sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary-950/80 to-transparent"></div>

@@ -35,10 +35,10 @@ export default function LTLPage() {
 
                         <div className="relative h-[500px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl">
                             <Image
-                                src="/cool-mountain-logistics/images/hero-bg.png"
+                                src="/cool-mountain-logistics/images/ltl.jpg"
                                 alt="LTL Service"
                                 fill
-                                className="object-cover object-right saturate-50"
+                                className="object-cover object-center"
                                 sizes="(max-width: 1024px) 100vw, 50vw"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-primary-950/70 to-transparent"></div>

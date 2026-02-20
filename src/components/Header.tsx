@@ -121,7 +121,12 @@ export default function Header() {
               </Link>
 
               {/* Services with Dropdown */}
-              <div ref={dropdownRef} className="relative">
+              <div
+                ref={dropdownRef}
+                className="relative"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
+              >
                 <button
                   onClick={() => setServicesOpen(!servicesOpen)}
                   className={`
@@ -141,17 +146,14 @@ export default function Header() {
 
                 {/* Dropdown Panel */}
                 <div className={`
-                  absolute top-full left-0 mt-3 w-60
-                  bg-primary-950/95 backdrop-blur-xl
-                  border border-white/10 rounded-xl
-                  shadow-2xl overflow-hidden
+                  absolute top-full left-0 pt-3 w-60
                   transition-all duration-300 origin-top
                   ${servicesOpen
                     ? 'opacity-100 scale-100 translate-y-0'
                     : 'opacity-0 scale-95 -translate-y-2 pointer-events-none'
                   }
                 `}>
-                  <div className="py-2">
+                  <div className="bg-primary-950/95 backdrop-blur-xl border border-white/10 rounded-xl shadow-2xl overflow-hidden py-2">
                     {servicesDropdown.map((item) => (
                       <Link
                         key={item.href}

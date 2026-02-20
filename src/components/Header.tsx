@@ -192,6 +192,9 @@ export default function Header() {
 
             {/* ─── Right Nav (Desktop) ─── */}
             <nav className="hidden lg:flex items-center gap-1 flex-1 justify-end">
+              <Link href="/about" className={navLinkClasses}>
+                About
+              </Link>
               <Link href="/carriers" className={navLinkClasses}>
                 Carriers
               </Link>
@@ -318,6 +321,15 @@ export default function Header() {
                   ))}
                 </ul>
               </div>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center gap-3 px-4 py-3.5 text-white font-medium text-lg rounded-xl transition-colors duration-200 hover:bg-white/10"
+              >
+                About Us
+              </Link>
             </li>
             <li>
               <Link

@@ -14,30 +14,48 @@ export default function DrayagePage() {
             </section>
 
             <section className="py-20 bg-white">
-                <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-                    <div className="prose prose-primary prose-lg mx-auto">
-                        <h2>Seamless Intermodal Transfer</h2>
-                        <p>
-                            Navigating port schedules, chassis availability, and tight container return windows requires agility. Drayage is all about timing, and mistimed moves can result in crippling demurrage and per diem charges.
-                        </p>
-                        <p>
-                            Cool Mountain Logistics works closely with verified drayage carriers who are actively registered at major seaports and rail ramps. We act as your reliable intermediary, smoothing out the logistics between the ship or train and your warehouse distribution point.
-                        </p>
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                        <div className="prose prose-primary prose-lg">
+                            <h2 className="text-3xl font-extrabold text-primary-900 mt-0">Seamless Intermodal Transfer</h2>
+                            <p>
+                                Navigating port schedules, chassis availability, and tight container return windows requires agility. Drayage is all about timing, and mistimed moves can result in crippling demurrage and per diem charges.
+                            </p>
+                            <p>
+                                Cool Mountain Logistics works closely with verified drayage carriers who are actively registered at major seaports and rail ramps. We act as your reliable intermediary, smoothing out the logistics between the ship or train and your warehouse distribution point.
+                            </p>
 
-                        <h3>Minimizing Your Port Friction</h3>
-                        <ul>
-                            <li><strong>Local Expertise:</strong> We maintain relationships with regional carriers who know the ins and outs of specific port terminals.</li>
-                            <li><strong>Fee Mitigation:</strong> By closely monitoring Free Time, we proactively schedule pulls and returns to save you money on storage and equipment fees.</li>
-                            <li><strong>Chassis Management:</strong> We verify chassis availability before dispatching, avoiding the common pitfalls of intermodal delays.</li>
-                        </ul>
-
-                        <div className="mt-12 bg-surface-50 p-8 rounded-[var(--radius-card)] border border-surface-200 text-center not-prose">
-                            <h4 className="text-2xl font-bold text-primary-900 mb-2">Ready to move containers?</h4>
-                            <p className="text-muted mb-6">Avoid port congestion headaches with our dedicated drayage services.</p>
-                            <Link href="/contact" className="inline-block bg-accent-500 text-white px-8 py-3 rounded-full font-bold uppercase tracking-wide hover:bg-accent-600 transition-colors shadow-btn">
-                                Request a Drayage Quote
-                            </Link>
+                            <h3 className="text-2xl font-bold text-primary-900 mt-8 mb-4">Minimizing Your Port Friction</h3>
+                            <ul className="space-y-3">
+                                <li><strong>Local Expertise:</strong> We maintain relationships with regional carriers who know the ins and outs of specific port terminals.</li>
+                                <li><strong>Fee Mitigation:</strong> By closely monitoring Free Time, we proactively schedule pulls and returns to save you money on storage and equipment fees.</li>
+                                <li><strong>Chassis Management:</strong> We verify chassis availability before dispatching, avoiding the common pitfalls of intermodal delays.</li>
+                            </ul>
                         </div>
+
+                        <div className="relative h-[500px] w-full rounded-[var(--radius-xl)] overflow-hidden shadow-2xl">
+                            <Image
+                                src="/cool-mountain-logistics/images/hero-bg.png"
+                                alt="Drayage Service"
+                                fill
+                                className="object-cover object-[75%_50%] hue-rotate-15"
+                                sizes="(max-width: 1024px) 100vw, 50vw"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary-950/70 to-transparent"></div>
+                            <div className="absolute bottom-6 left-6 right-6">
+                                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4">
+                                    <p className="text-white font-medium text-sm">Agile intermodal logistics designed to avoid port delays.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mt-16 bg-surface-50 p-10 rounded-[var(--radius-xl)] border border-surface-200 text-center max-w-3xl mx-auto">
+                        <h4 className="text-3xl font-bold text-primary-900 mb-3">Ready to move containers?</h4>
+                        <p className="text-muted mb-8 text-lg">Avoid port congestion headaches with our dedicated drayage services.</p>
+                        <Link href="/contact" className="inline-block bg-accent-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-accent-600 transition-colors shadow-btn">
+                            Request a Drayage Quote
+                        </Link>
                     </div>
                 </div>
             </section>

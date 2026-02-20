@@ -119,6 +119,9 @@ export default function Header() {
               <Link href="/shippers" className={navLinkClasses}>
                 Shippers
               </Link>
+              <Link href="/carriers" className={navLinkClasses}>
+                Carriers
+              </Link>
 
               {/* Services with Dropdown */}
               <div
@@ -196,9 +199,6 @@ export default function Header() {
             <nav className="hidden lg:flex items-center gap-1 flex-1 justify-end">
               <Link href="/about" className={navLinkClasses}>
                 About
-              </Link>
-              <Link href="/carriers" className={navLinkClasses}>
-                Carriers
               </Link>
               <Link href="/track" className={navLinkClasses}>
                 Track Load

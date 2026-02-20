@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import PremiumCTA from "@/components/PremiumCTA";
 
 export default function LTLPage() {
     return (
@@ -50,13 +51,7 @@ export default function LTLPage() {
                         </div>
                     </div>
 
-                    <div className="mt-16 bg-surface-50 p-10 rounded-[var(--radius-xl)] border border-surface-200 text-center max-w-3xl mx-auto">
-                        <h4 className="text-3xl font-bold text-primary-900 mb-3">Need to move a few pallets?</h4>
-                        <p className="text-muted mb-8 text-lg">Reach out today for honest rates and personalized service.</p>
-                        <Link href="/contact" className="inline-block bg-accent-500 text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-accent-600 transition-colors shadow-btn">
-                            Request an LTL Quote
-                        </Link>
-                    </div>
+                    <PremiumCTA />
                 </div>
             </section>
         </>

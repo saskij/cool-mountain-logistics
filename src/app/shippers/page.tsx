@@ -92,28 +92,50 @@ export default function ShippersPage() {
                                 ))}
                             </ul>
                         </div>
-                        <div className="bg-white p-8 rounded-[var(--radius-card)] shadow-card border border-surface-200">
-                            <h3 className="text-xl font-bold text-primary-900 mb-4">Request a Rate</h3>
-                            <form className="space-y-4" action="/contact">
-                                <div>
-                                    <label className="block text-sm font-medium text-primary-700 mb-1">Pickup Location</label>
-                                    <input type="text" className="w-full px-4 py-2 border border-surface-300 rounded-[var(--radius-btn)] focus:ring-2 focus:ring-accent-500 focus:outline-none" placeholder="City, State or ZIP" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-primary-700 mb-1">Delivery Location</label>
-                                    <input type="text" className="w-full px-4 py-2 border border-surface-300 rounded-[var(--radius-btn)] focus:ring-2 focus:ring-accent-500 focus:outline-none" placeholder="City, State or ZIP" />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-primary-700 mb-1">Equipment Type</label>
-                                    <select className="w-full px-4 py-2 border border-surface-300 rounded-[var(--radius-btn)] focus:ring-2 focus:ring-accent-500 focus:outline-none">
-                                        <option>Dry Van</option>
-                                        <option>Reefers</option>
-                                        <option>Flatbed</option>
-                                        <option>LTL</option>
-                                    </select>
-                                </div>
-                                <button className="w-full bg-primary-900 text-white font-bold py-3 rounded-[var(--radius-btn)] hover:bg-primary-800 transition-colors">Route to Quoting</button>
-                            </form>
+                        <div className="relative group bg-white/80 backdrop-blur-xl p-8 rounded-[var(--radius-xl)] shadow-2xl border border-surface-200/50 overflow-hidden">
+                            {/* Abstract background highlight */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                            <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                            {/* Ambient glow */}
+                            <div className="absolute -right-6 -top-6 w-32 h-32 rounded-full blur-[40px] bg-accent-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
+                            <div className="relative z-10">
+                                <h3 className="text-2xl font-bold text-primary-900 mb-6 tracking-tight">Request a Rate</h3>
+                                <form className="space-y-5" action="/contact">
+                                    <div>
+                                        <label className="block text-sm font-semibold text-primary-800 mb-1.5">Pickup Location</label>
+                                        <input type="text" className="w-full px-4 py-3 bg-surface-50 border border-surface-200 rounded-[var(--radius-btn)] focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 focus:bg-white focus:outline-none transition-all duration-200" placeholder="City, State or ZIP" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold text-primary-800 mb-1.5">Delivery Location</label>
+                                        <input type="text" className="w-full px-4 py-3 bg-surface-50 border border-surface-200 rounded-[var(--radius-btn)] focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 focus:bg-white focus:outline-none transition-all duration-200" placeholder="City, State or ZIP" />
+                                    </div>
+                                    <div>
+                                        <label className="block text-sm font-semibold text-primary-800 mb-1.5">Equipment Type</label>
+                                        <div className="relative">
+                                            <select className="w-full px-4 py-3 bg-surface-50 border border-surface-200 rounded-[var(--radius-btn)] appearance-none focus:ring-2 focus:ring-accent-500/50 focus:border-accent-500 focus:bg-white focus:outline-none transition-all duration-200">
+                                                <option>Dry Van</option>
+                                                <option>Reefers</option>
+                                                <option>Flatbed</option>
+                                                <option>LTL</option>
+                                            </select>
+                                            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-primary-500">
+                                                <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button className="w-full mt-2 bg-gradient-to-r from-primary-900 to-primary-800 text-white font-bold tracking-wide py-3.5 rounded-[var(--radius-btn)] shadow-btn hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 active:translate-y-0 relative overflow-hidden group/btn">
+                                        <span className="relative z-10 flex items-center justify-center gap-2">
+                                            Route to Quoting
+                                            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transform transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                                                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                                            </svg>
+                                        </span>
+                                        <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300 ease-out" />
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>

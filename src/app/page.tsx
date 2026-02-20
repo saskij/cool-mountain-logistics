@@ -22,9 +22,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-primary-950/85 via-primary-900/80 to-primary-800/90" />
 
         {/* Subtle noise texture */}
-        <div className="absolute inset-0 opacity-[0.04] mix-blend-overlay" style={{
-          backgroundImage: "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
-        }} />
+        <div
+          className="absolute inset-0 opacity-[0.04] mix-blend-overlay"
+          style={{
+            backgroundImage:
+              "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")",
+          }}
+        />
 
         {/* Hero content */}
         <div className="relative z-10 mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pt-28 pb-10 md:pt-36 md:pb-16">
@@ -38,34 +42,46 @@ export default function Home() {
 
           {/* Heading */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight max-w-4xl">
-            Reliable Freight.{" "}
-            <br className="hidden sm:inline" />
+            Reliable Freight. <br className="hidden sm:inline" />
             <span className="text-accent-400">Proven Results.</span>
           </h1>
 
           {/* Subtitle */}
           <p className="mt-5 text-base sm:text-lg md:text-xl text-primary-100/90 leading-relaxed max-w-2xl">
             Cool Mountain Logistics connects shippers with vetted carriers
-            nationwide — full truckload, LTL, and specialized freight moved
-            with precision, speed, and total transparency.
+            nationwide — full truckload, LTL, and specialized freight moved with
+            precision, speed, and total transparency.
           </p>
 
           {/* ─── CTA Cards ─── */}
           <div className="mt-10 grid sm:grid-cols-2 gap-5 max-w-2xl">
             {/* Card 1 — Get a Quote */}
             <Link href="/contact" className="group relative">
-              <div className="
+              <div
+                className="
                 bg-white/[0.12] backdrop-blur-md
                 border border-white/20
                 rounded-[var(--radius-card)] p-6
                 transition-all duration-300
                 shadow-card
                 group-hover:bg-white/[0.18] group-hover:shadow-card-hover group-hover:-translate-y-1 group-hover:border-accent-400/40
-              ">
+              "
+              >
                 {/* Icon */}
                 <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-btn)] bg-accent-500 text-white mb-4 shadow-btn group-hover:scale-105 transition-transform duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                    />
                   </svg>
                 </div>
 
@@ -76,14 +92,26 @@ export default function Home() {
                   Get a Quote
                 </p>
                 <p className="text-sm text-primary-200/80 leading-relaxed">
-                  Instant access to competitive rates across our nationwide carrier network.
+                  Instant access to competitive rates across our nationwide
+                  carrier network.
                 </p>
 
                 {/* Arrow */}
                 <div className="mt-4 flex items-center gap-1 text-accent-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300">
                   Request Now
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
                   </svg>
                 </div>
               </div>
@@ -91,18 +119,31 @@ export default function Home() {
 
             {/* Card 2 — Join Our Network */}
             <Link href="/carriers" className="group relative">
-              <div className="
+              <div
+                className="
                 bg-white/[0.12] backdrop-blur-md
                 border border-white/20
                 rounded-[var(--radius-card)] p-6
                 transition-all duration-300
                 shadow-card
                 group-hover:bg-white/[0.18] group-hover:shadow-card-hover group-hover:-translate-y-1 group-hover:border-accent-400/40
-              ">
+              "
+              >
                 {/* Icon */}
                 <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-btn)] bg-primary-600 text-white mb-4 group-hover:bg-primary-500 group-hover:scale-105 transition-all duration-300">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"
+                    />
                   </svg>
                 </div>
 
@@ -113,14 +154,26 @@ export default function Home() {
                   Join Our Network
                 </p>
                 <p className="text-sm text-primary-200/80 leading-relaxed">
-                  Consistent loads, fast payment, and a partnership built on trust.
+                  Consistent loads, fast payment, and a partnership built on
+                  trust.
                 </p>
 
                 {/* Arrow */}
                 <div className="mt-4 flex items-center gap-1 text-accent-400 text-sm font-semibold group-hover:gap-2 transition-all duration-300">
                   Sign Up
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13 7l5 5m0 0l-5 5m5-5H6"
+                    />
                   </svg>
                 </div>
               </div>
@@ -133,8 +186,19 @@ export default function Home() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-10 md:pb-14">
             <div className="max-w-xl">
               <p className="text-xs font-bold text-white/70 uppercase tracking-widest mb-3 flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 text-accent-400"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
                 </svg>
                 Track Your Load
               </p>
@@ -151,14 +215,16 @@ export default function Home() {
                     transition-all duration-200
                   "
                 />
-                <button className="
+                <button
+                  className="
                   bg-accent-500 text-white
                   px-6 py-3 rounded-r-[var(--radius-btn)]
                   text-sm font-bold uppercase tracking-wide
                   transition-all duration-200
                   hover:bg-accent-600
                   shrink-0
-                ">
+                "
+                >
                   Track
                 </button>
               </div>
@@ -177,19 +243,27 @@ export default function Home() {
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="bg-white rounded-[var(--radius-xl)] shadow-card p-6 md:p-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border border-surface-100">
             <div>
-              <p className="text-3xl md:text-4xl font-extrabold text-primary-800">10K+</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-primary-800">
+                10K+
+              </p>
               <p className="text-sm text-muted mt-1">Loads Delivered</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-extrabold text-primary-800">50</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-primary-800">
+                50
+              </p>
               <p className="text-sm text-muted mt-1">States Covered</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-extrabold text-accent-500">99%</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-accent-500">
+                99%
+              </p>
               <p className="text-sm text-muted mt-1">On-Time Rate</p>
             </div>
             <div>
-              <p className="text-3xl md:text-4xl font-extrabold text-primary-800">24/7</p>
+              <p className="text-3xl md:text-4xl font-extrabold text-primary-800">
+                24/7
+              </p>
               <p className="text-sm text-muted mt-1">Live Support</p>
             </div>
           </div>
@@ -199,140 +273,771 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SERVICE MODALITIES
           ═══════════════════════════════════════════ */}
-      <section className="py-20 md:py-28 bg-surface-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-24 md:py-32 relative overflow-hidden bg-white">
+        {/* Subtle background gradient and patterns */}
+        <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-surface-50/80 to-transparent pointer-events-none" />
+        <div className="absolute -left-40 top-40 w-96 h-96 bg-primary-100/30 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute right-0 bottom-20 w-80 h-80 bg-accent-100/20 rounded-full blur-[80px] pointer-events-none" />
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
           {/* Section header */}
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <p className="text-sm font-bold text-accent-500 uppercase tracking-widest mb-3">
-              What We Move
-            </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 tracking-tight">
+          <div className="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-900 tracking-tight">
               Service Modalities
             </h2>
-            <p className="mt-4 text-lg text-muted leading-relaxed">
-              From dry van to oversized — we broker capacity across every major
-              freight category in the continental United States.
+            <p className="mt-5 text-lg md:text-xl text-muted leading-relaxed">
+              From dry van to oversized, we engineer capacity solutions across
+              every major freight category nationwide.
             </p>
           </div>
 
           {/* 6-card grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {/* ── FTL ── */}
-            <div className="group bg-white border border-surface-200 rounded-[var(--radius-card)] p-7 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200">
-              <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-lg)] bg-primary-50 text-primary-600 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-                </svg>
+            <div className="group relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-surface-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-1 hover:border-primary-200/50">
+              {/* Internal subtle gradient/glow */}
+              <div className="absolute -right-8 -top-8 w-32 h-32 bg-primary-50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              <div className="relative mb-8">
+                {/* Custom multi-layer SVG */}
+                <div className="relative w-16 h-16">
+                  {/* Backdrop glow */}
+                  <div className="absolute inset-0 bg-primary-100/50 rounded-xl blur-md scale-90 group-hover:scale-110 group-hover:bg-primary-200/50 transition-all duration-500" />
+                  <div className="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-white to-primary-50 rounded-xl border border-white/60 shadow-sm">
+                    <svg
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8"
+                    >
+                      <rect
+                        x="8"
+                        y="14"
+                        width="22"
+                        height="18"
+                        rx="2"
+                        fill="url(#ftl-grad-1)"
+                        fillOpacity="0.2"
+                      />
+                      <path
+                        d="M30 14h6.5c1.2 0 2.3.8 2.8 1.9l2.4 5.2c.2.4.3.8.3 1.2V32h-12V14z"
+                        fill="url(#ftl-grad-2)"
+                      />
+                      <rect
+                        x="8"
+                        y="14"
+                        width="22"
+                        height="18"
+                        rx="2"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-700"
+                      />
+                      <circle
+                        cx="14"
+                        cy="34"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="24"
+                        cy="34"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="36"
+                        cy="34"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path
+                        d="M8 22h22"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeDasharray="3 3"
+                        className="text-primary-400 opacity-60"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="ftl-grad-1"
+                          x1="8"
+                          y1="14"
+                          x2="30"
+                          y2="32"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#0284C7" />
+                          <stop offset="1" stopColor="#38BDF8" />
+                        </linearGradient>
+                        <linearGradient
+                          id="ftl-grad-2"
+                          x1="30"
+                          y1="14"
+                          x2="42"
+                          y2="32"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#0EA5E9" />
+                          <stop offset="1" stopColor="#7DD3FC" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base font-bold text-primary-900 mb-2">Full Truckload (FTL)</h3>
-              <p className="text-sm text-muted leading-relaxed mb-4">
-                Dedicated trailer capacity for high-volume shipments.
-                Door-to-door, time-definite service with real-time ETA updates.
+
+              <h3 className="text-xl font-bold text-primary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                Full Truckload (FTL)
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Dedicated trailer capacity tailored for high-volume shipments.
+                Experience door-to-door, time-definite service with seamless
+                real-time ETA updates.
               </p>
-              <Link href="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:text-accent-500 transition-colors duration-200">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+              <Link
+                href="/services/ftl"
+                className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-accent-500 transition-colors duration-300"
+              >
+                Explore FTL
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </div>
 
             {/* ── LTL ── */}
-            <div className="group bg-white border border-surface-200 rounded-[var(--radius-card)] p-7 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200">
-              <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-lg)] bg-primary-50 text-primary-600 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
-                </svg>
+            <div className="group relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-surface-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-1 hover:border-primary-200/50">
+              <div className="absolute -right-8 -top-8 w-32 h-32 bg-accent-50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              <div className="relative mb-8">
+                <div className="relative w-16 h-16">
+                  <div className="absolute inset-0 bg-accent-100/50 rounded-xl blur-md scale-90 group-hover:scale-110 group-hover:bg-accent-200/60 transition-all duration-500" />
+                  <div className="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-white to-surface-50 rounded-xl border border-white/60 shadow-sm">
+                    <svg
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8"
+                    >
+                      <rect
+                        x="10"
+                        y="24"
+                        width="12"
+                        height="12"
+                        rx="1.5"
+                        fill="url(#ltl-grad-1)"
+                      />
+                      <rect
+                        x="10"
+                        y="24"
+                        width="12"
+                        height="12"
+                        rx="1.5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-700"
+                      />
+                      <rect
+                        x="26"
+                        y="16"
+                        width="12"
+                        height="20"
+                        rx="1.5"
+                        fill="url(#ltl-grad-2)"
+                        fillOpacity="0.4"
+                      />
+                      <rect
+                        x="26"
+                        y="16"
+                        width="12"
+                        height="20"
+                        rx="1.5"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeDasharray="2 2"
+                        className="text-accent-500"
+                      />
+                      <path
+                        d="M16 38v4m16-4v4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-300"
+                      />
+                      <path
+                        d="M12 20l4-4 4 4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-primary-400 group-hover:-translate-y-1 transition-transform duration-300"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="ltl-grad-1"
+                          x1="10"
+                          y1="24"
+                          x2="22"
+                          y2="36"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#F59E0B" />
+                          <stop offset="1" stopColor="#FCD34D" />
+                        </linearGradient>
+                        <linearGradient
+                          id="ltl-grad-2"
+                          x1="26"
+                          y1="16"
+                          x2="38"
+                          y2="36"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#0EA5E9" />
+                          <stop offset="1" stopColor="#7DD3FC" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base font-bold text-primary-900 mb-2">Less Than Truckload (LTL)</h3>
-              <p className="text-sm text-muted leading-relaxed mb-4">
-                Cost-effective partial-load solutions with consolidated routing.
-                Ideal for palletized freight under 15,000 lbs with flexible scheduling.
+
+              <h3 className="text-xl font-bold text-primary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                Less Than Truckload (LTL)
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Smart, cost-effective partial-load solutions utilizing
+                consolidated routing networks for scalable flexibility.
               </p>
-              <Link href="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:text-accent-500 transition-colors duration-200">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+              <Link
+                href="/services/ltl"
+                className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-accent-500 transition-colors duration-300"
+              >
+                Explore LTL
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </div>
 
             {/* ── Refrigerated ── */}
-            <div className="group bg-white border border-surface-200 rounded-[var(--radius-card)] p-7 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200">
-              <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-lg)] bg-primary-50 text-primary-600 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
-                </svg>
+            <div className="group relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-surface-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-1 hover:border-primary-200/50">
+              <div className="absolute -right-8 -top-8 w-32 h-32 bg-blue-50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              <div className="relative mb-8">
+                <div className="relative w-16 h-16">
+                  <div className="absolute inset-0 bg-blue-100/50 rounded-xl blur-md scale-90 group-hover:scale-110 group-hover:bg-blue-200/50 transition-all duration-500" />
+                  <div className="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-white to-blue-50 rounded-xl border border-white/60 shadow-sm">
+                    <svg
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8"
+                    >
+                      <rect
+                        x="8"
+                        y="14"
+                        width="24"
+                        height="20"
+                        rx="2"
+                        fill="url(#ref-grad-1)"
+                      />
+                      <path
+                        d="M32 16h6a2 2 0 012 2v14h-8V16z"
+                        fill="white"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-700"
+                      />
+                      <path
+                        d="M14 20h4m-4 4h8"
+                        stroke="white"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                      <circle
+                        cx="16"
+                        cy="38"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="34"
+                        cy="38"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path
+                        d="M10 10v6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        className="text-blue-400 group-hover:-translate-y-1 transition-transform duration-300"
+                      />
+                      <path
+                        d="M14 8v8"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        className="text-blue-500 group-hover:-translate-y-1 delay-75 transition-transform duration-300"
+                      />
+                      <path
+                        d="M18 10v6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        className="text-blue-400 group-hover:-translate-y-1 delay-150 transition-transform duration-300"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="ref-grad-1"
+                          x1="8"
+                          y1="14"
+                          x2="32"
+                          y2="34"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#3B82F6" />
+                          <stop offset="1" stopColor="#93C5FD" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base font-bold text-primary-900 mb-2">Refrigerated</h3>
-              <p className="text-sm text-muted leading-relaxed mb-4">
-                Temperature-controlled reefer capacity for perishable goods.
-                FSMA-compliant with continuous temp monitoring and chain-of-custody logs.
+
+              <h3 className="text-xl font-bold text-primary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                Refrigerated
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Premium temperature-controlled capacity. FSMA-compliant handling
+                with continuous monitoring for critical perishables.
               </p>
-              <Link href="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:text-accent-500 transition-colors duration-200">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+              <Link
+                href="/services/reefer"
+                className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-accent-500 transition-colors duration-300"
+              >
+                Explore Reefer
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </div>
 
             {/* ── Flatbed / Stepdeck ── */}
-            <div className="group bg-white border border-surface-200 rounded-[var(--radius-card)] p-7 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200">
-              <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-lg)] bg-primary-50 text-primary-600 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3" />
-                </svg>
+            <div className="group relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-surface-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-1 hover:border-primary-200/50">
+              <div className="absolute -right-8 -top-8 w-32 h-32 bg-stone-100 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              <div className="relative mb-8">
+                <div className="relative w-16 h-16">
+                  <div className="absolute inset-0 bg-stone-200/50 rounded-xl blur-md scale-90 group-hover:scale-110 group-hover:bg-stone-300/50 transition-all duration-500" />
+                  <div className="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-white to-stone-50 rounded-xl border border-white/60 shadow-sm">
+                    <svg
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8"
+                    >
+                      <path
+                        d="M8 30h24v2H8z"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path d="M32 26h8v6h-8z" fill="url(#fb-grad-1)" />
+                      <path
+                        d="M32 26h8a2 2 0 012 2v4h-10v-6z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-700"
+                      />
+                      <path
+                        d="M14 20l6-6 6 6H14z"
+                        fill="url(#fb-grad-2)"
+                        fillOpacity="0.8"
+                      />
+                      <path
+                        d="M14 20l6-6 6 6H14z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-600"
+                      />
+                      <path
+                        d="M12 24l5-5 5 5H12z"
+                        fill="url(#fb-grad-2)"
+                        fillOpacity="0.6"
+                      />
+                      <path
+                        d="M12 24l5-5 5 5H12z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-500"
+                      />
+                      <circle
+                        cx="16"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="36"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="fb-grad-1"
+                          x1="32"
+                          y1="26"
+                          x2="40"
+                          y2="32"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#94A3B8" />
+                          <stop offset="1" stopColor="#CBD5E1" />
+                        </linearGradient>
+                        <linearGradient
+                          id="fb-grad-2"
+                          x1="12"
+                          y1="14"
+                          x2="26"
+                          y2="24"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#F97316" />
+                          <stop offset="1" stopColor="#FDBA74" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base font-bold text-primary-900 mb-2">Flatbed &amp; Stepdeck</h3>
-              <p className="text-sm text-muted leading-relaxed mb-4">
-                Open-deck solutions for oversized and non-conveyable cargo.
-                Tarping, strapping, and permit coordination included as standard.
+
+              <h3 className="text-xl font-bold text-primary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                Flatbed & Stepdeck
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Open-deck architecture for non-conveyable or oversized freight.
+                Comprehensive tarping and strapping solutions.
               </p>
-              <Link href="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:text-accent-500 transition-colors duration-200">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+              <Link
+                href="/services/flatbed"
+                className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-accent-500 transition-colors duration-300"
+              >
+                Explore Flatbed
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </div>
 
             {/* ── Specialized / Heavy Haul ── */}
-            <div className="group bg-white border border-surface-200 rounded-[var(--radius-card)] p-7 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200">
-              <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-lg)] bg-primary-50 text-primary-600 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M11.42 15.17l-5.1-5.1a2.12 2.12 0 010-3l.7-.7a2.12 2.12 0 013 0l1.4 1.4 3.54-3.54a2.12 2.12 0 013 0l.7.7a2.12 2.12 0 010 3l-5.1 5.1a1.5 1.5 0 01-2.12 0zM17.5 21h-11A2.5 2.5 0 014 18.5v-11A2.5 2.5 0 016.5 5H10l2 2h5.5A2.5 2.5 0 0120 9.5v9a2.5 2.5 0 01-2.5 2.5z" />
-                </svg>
+            <div className="group relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-surface-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-1 hover:border-primary-200/50">
+              <div className="absolute -right-8 -top-8 w-32 h-32 bg-rose-50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              <div className="relative mb-8">
+                <div className="relative w-16 h-16">
+                  <div className="absolute inset-0 bg-rose-100/50 rounded-xl blur-md scale-90 group-hover:scale-110 group-hover:bg-rose-200/50 transition-all duration-500" />
+                  <div className="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-white to-rose-50 rounded-xl border border-white/60 shadow-sm">
+                    <svg
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8"
+                    >
+                      <path
+                        d="M6 30h26v2H6z"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path d="M32 20l8 4v6h-8v-10z" fill="url(#hh-grad-1)" />
+                      <path
+                        d="M32 20l8 4v6h-8v-10z"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-700"
+                      />
+                      <rect
+                        x="8"
+                        y="16"
+                        width="20"
+                        height="14"
+                        rx="1"
+                        fill="url(#hh-grad-2)"
+                      />
+                      <rect
+                        x="8"
+                        y="16"
+                        width="20"
+                        height="14"
+                        rx="1"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-rose-500"
+                      />
+                      <circle
+                        cx="12"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="20"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="28"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="38"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path
+                        d="M12 23h12"
+                        stroke="white"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="hh-grad-1"
+                          x1="32"
+                          y1="20"
+                          x2="40"
+                          y2="30"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#64748B" />
+                          <stop offset="1" stopColor="#94A3B8" />
+                        </linearGradient>
+                        <linearGradient
+                          id="hh-grad-2"
+                          x1="8"
+                          y1="16"
+                          x2="28"
+                          y2="30"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#E11D48" />
+                          <stop offset="1" stopColor="#FDA4AF" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base font-bold text-primary-900 mb-2">Specialized &amp; Heavy Haul</h3>
-              <p className="text-sm text-muted leading-relaxed mb-4">
-                RGN, lowboy, and multi-axle configurations for overweight loads.
-                Full route surveys, escort vehicles, and DOT permit management.
+
+              <h3 className="text-xl font-bold text-primary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                Heavy Haul & Specialized
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Complex logistical movements managed start-to-finish. Complete
+                route surveys and permit management included.
               </p>
-              <Link href="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:text-accent-500 transition-colors duration-200">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+              <Link
+                href="/services/heavy"
+                className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-accent-500 transition-colors duration-300"
+              >
+                Explore Heavy Haul
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </div>
 
             {/* ── Drayage ── */}
-            <div className="group bg-white border border-surface-200 rounded-[var(--radius-card)] p-7 transition-all duration-300 hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200">
-              <div className="flex items-center justify-center w-12 h-12 rounded-[var(--radius-lg)] bg-primary-50 text-primary-600 mb-5 group-hover:bg-primary-100 transition-colors duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12.75 3.03v.568c0 .334.148.65.405.864a4.51 4.51 0 010 6.096 1.038 1.038 0 00-.405.864v.568m0-8.96A4.49 4.49 0 008.25 6c0 .903.266 1.744.725 2.45M12.75 3.03A4.49 4.49 0 0117.25 6c0 .903-.266 1.744-.725 2.45m-4.5-5.42V1.5m0 0h-1.5m1.5 0h1.5M4.28 14.03A4.49 4.49 0 003 17.25c0 1.29.543 2.454 1.414 3.276A1.038 1.038 0 014.82 21.39v.568m0 0H3m1.82 0h1.5m8.93-7.93A4.49 4.49 0 0121 17.25a4.49 4.49 0 01-1.414 3.276 1.038 1.038 0 00-.406.864v.568m0 0h1.82m-1.82 0h-1.5M12 12.75v.568c0 .334-.148.65-.405.864a4.51 4.51 0 000 6.096c.257.213.405.53.405.864v.068" />
-                </svg>
+            <div className="group relative overflow-hidden bg-white/80 backdrop-blur-md rounded-2xl p-8 border border-surface-200 shadow-sm transition-all duration-500 hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-1 hover:border-primary-200/50">
+              <div className="absolute -right-8 -top-8 w-32 h-32 bg-teal-50 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
+              <div className="relative mb-8">
+                <div className="relative w-16 h-16">
+                  <div className="absolute inset-0 bg-teal-100/50 rounded-xl blur-md scale-90 group-hover:scale-110 group-hover:bg-teal-200/50 transition-all duration-500" />
+                  <div className="relative flex items-center justify-center w-full h-full bg-gradient-to-br from-white to-teal-50 rounded-xl border border-white/60 shadow-sm">
+                    <svg
+                      viewBox="0 0 48 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-8 h-8"
+                    >
+                      <rect
+                        x="12"
+                        y="14"
+                        width="24"
+                        height="12"
+                        rx="1"
+                        fill="url(#dray-grad-1)"
+                      />
+                      <rect
+                        x="12"
+                        y="14"
+                        width="24"
+                        height="12"
+                        rx="1"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-teal-600"
+                      />
+                      <path
+                        d="M16 14v12m8-12v12m8-12v12"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        className="text-teal-700 opacity-30"
+                      />
+                      <path
+                        d="M8 30h26v2H8z"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path
+                        d="M34 26h6v6h-6z"
+                        fill="white"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        className="text-primary-700"
+                      />
+                      <circle
+                        cx="16"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <circle
+                        cx="36"
+                        cy="36"
+                        r="3"
+                        fill="currentColor"
+                        className="text-primary-800"
+                      />
+                      <path
+                        d="M22 6L24 10l2-4"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="text-teal-400 group-hover:-translate-y-1 transition-transform duration-300"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="dray-grad-1"
+                          x1="12"
+                          y1="14"
+                          x2="36"
+                          y2="26"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="#0F766E" />
+                          <stop offset="1" stopColor="#5EEAD4" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-base font-bold text-primary-900 mb-2">Drayage</h3>
-              <p className="text-sm text-muted leading-relaxed mb-4">
-                Port and intermodal container transfer across major terminals.
-                Chassis provisioning, demurrage mitigation, and same-day dispatch.
+
+              <h3 className="text-xl font-bold text-primary-900 mb-3 group-hover:text-primary-700 transition-colors">
+                Drayage Service
+              </h3>
+              <p className="text-sm text-muted leading-relaxed mb-6">
+                Critical port and intermodal transfers carefully orchestrated.
+                Minimize demurrage with proactive chassis provisioning.
               </p>
-              <Link href="/services" className="inline-flex items-center gap-1 text-sm font-semibold text-primary-600 group-hover:text-accent-500 transition-colors duration-200">
-                Learn More
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+
+              <Link
+                href="/services"
+                className="inline-flex items-center gap-2 text-sm font-bold text-primary-600 group-hover:text-accent-500 transition-colors duration-300"
+              >
+                Explore Drayage
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  />
                 </svg>
               </Link>
             </div>
@@ -343,67 +1048,245 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           FEATURES SECTION
           ═══════════════════════════════════════════ */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 tracking-tight">
+      <section className="py-24 md:py-32 bg-surface-50 relative overflow-hidden">
+        {/* Subtle background elements */}
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-surface-300 to-transparent" />
+        <div className="absolute right-0 top-1/4 w-96 h-96 bg-primary-100/40 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute left-0 bottom-0 w-80 h-80 bg-accent-100/30 rounded-full blur-[100px] pointer-events-none" />
+
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 z-10">
+          <div className="text-center max-w-2xl mx-auto mb-16 lg:mb-20">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary-900 tracking-tight">
               Why Cool Mountain?
             </h2>
-            <p className="mt-4 text-lg text-muted leading-relaxed">
-              We go the extra mile — literally. Our brokerage model delivers
-              reliability, competitive rates, and unmatched service.
+            <p className="mt-5 text-lg md:text-xl text-muted leading-relaxed">
+              We engineer reliability. Our advanced brokerage model delivers
+              unparalleled capacity, precision, and proactive service.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6 lg:gap-8">
             {[
               {
-                icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                ),
                 title: "Vetted Carrier Network",
-                desc: "Every carrier in our network is fully insured, safety-rated, and performance-reviewed. We don\u2019t cut corners on reliability.",
-              },
-              {
+                desc: "Every carrier in our network undergoes rigorous vetting. Fully insured, safety-rated, and performance-reviewed. We don’t compromise on trust.",
+                color: "primary",
                 icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  <svg
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-8 h-8"
+                  >
+                    <path
+                      d="M24 6l14 6v12c0 8-7 14-14 18-7-4-14-10-14-18V12l14-6z"
+                      fill="url(#feat-grad-1)"
+                    />
+                    <path
+                      d="M24 6l14 6v12c0 8-7 14-14 18-7-4-14-10-14-18V12l14-6z"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinejoin="round"
+                      className="text-primary-700"
+                    />
+                    <path
+                      d="M16 24l6 6 12-12"
+                      stroke="white"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="feat-grad-1"
+                        x1="10"
+                        y1="6"
+                        x2="38"
+                        y2="42"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#0EA5E9" />
+                        <stop offset="1" stopColor="#38BDF8" />
+                      </linearGradient>
+                    </defs>
                   </svg>
                 ),
+              },
+              {
                 title: "Full Visibility",
-                desc: "Track your freight in real-time. Our platform gives you complete transparency from pickup to delivery — no guesswork.",
-              },
-              {
+                desc: "Real-time tracking and automated ETA updates. Our platform ensures total transparency from dispatch to delivery — no blind spots.",
+                color: "accent",
                 icon: (
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <svg
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-8 h-8"
+                  >
+                    <circle cx="24" cy="24" r="16" fill="url(#feat-grad-2)" />
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="16"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-accent-600"
+                    />
+                    <path
+                      d="M24 14a10 10 0 000 20 10 10 0 000-20z"
+                      fill="white"
+                      fillOpacity="0.2"
+                    />
+                    <path
+                      d="M22 24l6-6m-6 6l6 6M16 24h6"
+                      stroke="white"
+                      strokeWidth="2.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="group-hover:translate-x-1 transition-transform duration-300"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="feat-grad-2"
+                        x1="8"
+                        y1="8"
+                        x2="40"
+                        y2="40"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#F59E0B" />
+                        <stop offset="1" stopColor="#FBBF24" />
+                      </linearGradient>
+                    </defs>
                   </svg>
                 ),
-                title: "Fast, Fair Rates",
-                desc: "Our pricing engine matches your shipment with the most cost-effective carrier. Competitive rates without sacrificing quality.",
               },
-            ].map((card) => (
+              {
+                title: "Fast, Fair Rates",
+                desc: "Our proprietary pricing engine aligns your freight with optimal capacity. Secure competitive market rates without ever sacrificing quality.",
+                color: "emerald",
+                icon: (
+                  <svg
+                    viewBox="0 0 48 48"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-8 h-8"
+                  >
+                    <path
+                      d="M10 34l8-14 8 8 12-16"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="text-emerald-700"
+                    />
+                    <path
+                      d="M10 34l8-14 8 8 12-16L38 40H10v-6z"
+                      fill="url(#feat-grad-3)"
+                    />
+                    <circle
+                      cx="10"
+                      cy="34"
+                      r="3"
+                      fill="white"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-emerald-600"
+                    />
+                    <circle
+                      cx="18"
+                      cy="20"
+                      r="3"
+                      fill="white"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-emerald-600"
+                    />
+                    <circle
+                      cx="26"
+                      cy="28"
+                      r="3"
+                      fill="white"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-emerald-600"
+                    />
+                    <circle
+                      cx="38"
+                      cy="12"
+                      r="3"
+                      fill="white"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      className="text-emerald-600"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="feat-grad-3"
+                        x1="10"
+                        y1="12"
+                        x2="38"
+                        y2="40"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stopColor="#10B981" stopOpacity="0.4" />
+                        <stop
+                          offset="1"
+                          stopColor="#34D399"
+                          stopOpacity="0.05"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                ),
+              },
+            ].map((card, idx) => (
               <div
                 key={card.title}
                 className="
-                  group relative bg-surface-50 border border-surface-200
-                  rounded-[var(--radius-card)] p-8
-                  transition-all duration-300
-                  hover:shadow-card-hover hover:-translate-y-1 hover:border-primary-200
+                  group relative bg-white/60 backdrop-blur-xl border border-surface-200/60
+                  rounded-3xl p-8 xl:p-10
+                  transition-all duration-500
+                  shadow-sm hover:shadow-2xl hover:shadow-primary-900/5 hover:-translate-y-2 hover:bg-white
+                  overflow-hidden
                 "
               >
-                <div className="flex items-center justify-center w-14 h-14 rounded-[var(--radius-lg)] bg-primary-100 text-primary-700 mb-6 group-hover:bg-accent-100 group-hover:text-accent-600 transition-colors duration-300">
-                  {card.icon}
+                {/* Custom inner highlight & gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-white/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none" />
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                {/* Floating ambient glow tied to card color */}
+                <div
+                  className={`
+                  absolute -right-10 -top-10 w-40 h-40 rounded-full blur-[40px] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none
+                  ${card.color === "primary" ? "bg-primary-100/50" : card.color === "accent" ? "bg-accent-100/50" : "bg-emerald-100/50"}
+                `}
+                />
+
+                <div className="relative z-10">
+                  <div
+                    className={`
+                    flex items-center justify-center w-16 h-16 rounded-2xl mb-8
+                    transition-transform duration-500 group-hover:scale-110 shadow-sm
+                    ${
+                      card.color === "primary"
+                        ? "bg-gradient-to-br from-primary-50 to-primary-100/50 border border-primary-100"
+                        : card.color === "accent"
+                          ? "bg-gradient-to-br from-accent-50 to-accent-100/50 border border-accent-100"
+                          : "bg-gradient-to-br from-emerald-50 to-emerald-100/50 border border-emerald-100"
+                    }
+                  `}
+                  >
+                    {card.icon}
+                  </div>
+
+                  <h3 className="text-2xl font-bold text-primary-900 mb-4 tracking-tight">
+                    {card.title}
+                  </h3>
+                  <p className="text-base text-muted leading-relaxed">
+                    {card.desc}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-primary-900 mb-3">
-                  {card.title}
-                </h3>
-                <p className="text-sm text-muted leading-relaxed">
-                  {card.desc}
-                </p>
               </div>
             ))}
           </div>
@@ -425,9 +1308,9 @@ export default function Home() {
                 Licensed. Bonded. Insured.
               </h2>
               <p className="mt-3 text-base text-muted leading-relaxed max-w-lg">
-                Cool Mountain Logistics LLC is a federally registered property broker,
-                fully authorized by the FMCSA to arrange transportation of freight
-                across all 50 states.
+                Cool Mountain Logistics LLC is a federally registered property
+                broker, fully authorized by the FMCSA to arrange transportation
+                of freight across all 50 states.
               </p>
             </div>
 
@@ -437,25 +1320,57 @@ export default function Home() {
               <div className="flex items-center gap-4 bg-white border border-surface-200 rounded-[var(--radius-card)] px-6 py-5 shadow-card">
                 {/* Shield icon */}
                 <div className="flex items-center justify-center w-14 h-14 rounded-full bg-primary-100 text-primary-700">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-7 w-7"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={1.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-bold text-primary-900">USDOT 04371123</p>
-                  <p className="text-sm font-bold text-primary-900 mt-0.5">MC 1712055</p>
-                  <p className="text-xs text-muted mt-1">1428 Madison Ave, Nampa, ID 83687</p>
+                  <p className="text-sm font-bold text-primary-900">
+                    USDOT 04371123
+                  </p>
+                  <p className="text-sm font-bold text-primary-900 mt-0.5">
+                    MC 1712055
+                  </p>
+                  <p className="text-xs text-muted mt-1">
+                    1428 Madison Ave, Nampa, ID 83687
+                  </p>
                 </div>
               </div>
 
               {/* FMCSA text badge */}
               <div className="flex items-center gap-3 bg-primary-800 rounded-[var(--radius-card)] px-6 py-5 text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-accent-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-4.247m0 0A8.966 8.966 0 003 12c0-1.97.633-3.794 1.708-5.276" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-8 w-8 text-accent-400 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5a17.92 17.92 0 01-8.716-4.247m0 0A8.966 8.966 0 003 12c0-1.97.633-3.794 1.708-5.276"
+                  />
                 </svg>
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-wider text-primary-300">FMCSA</p>
-                  <p className="text-sm font-bold">Authorized Property Broker</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-primary-300">
+                    FMCSA
+                  </p>
+                  <p className="text-sm font-bold">
+                    Authorized Property Broker
+                  </p>
                 </div>
               </div>
             </div>
@@ -478,8 +1393,9 @@ export default function Home() {
             Ready to Move Your Freight?
           </h2>
           <p className="mt-5 text-lg text-primary-200 max-w-2xl mx-auto leading-relaxed">
-            Whether you&apos;re shipping a single pallet or managing a full supply chain,
-            Cool Mountain Logistics has the capacity, expertise, and network to deliver.
+            Whether you&apos;re shipping a single pallet or managing a full
+            supply chain, Cool Mountain Logistics has the capacity, expertise,
+            and network to deliver.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5">
@@ -497,8 +1413,19 @@ export default function Home() {
               "
             >
               Get a Quote Today
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                />
               </svg>
             </Link>
 
@@ -511,8 +1438,19 @@ export default function Home() {
                   hover:text-accent-400 transition-colors duration-200
                 "
               >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+                  />
                 </svg>
                 (208) 555-1234
               </a>
@@ -523,4 +1461,3 @@ export default function Home() {
     </>
   );
 }
-

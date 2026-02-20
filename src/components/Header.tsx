@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import ScrollToTopLink from './ScrollToTopLink';
 
 const servicesDropdown = [
   { label: 'Full Truckload (FTL)', href: '/services/ftl' },
@@ -179,7 +180,7 @@ export default function Header() {
             </nav>
 
             {/* ─── Center Logo ─── */}
-            <Link href="/" className="relative z-10 shrink-0 -my-5 group">
+            <ScrollToTopLink href="/" className="relative z-10 shrink-0 -my-5 group">
               <div className={`
                 relative transition-all duration-500
                 ${scrolled ? 'h-16 w-28' : 'h-20 w-32'}
@@ -193,7 +194,7 @@ export default function Header() {
                   sizes="128px"
                 />
               </div>
-            </Link>
+            </ScrollToTopLink>
 
             {/* ─── Right Nav (Desktop) ─── */}
             <nav className="hidden lg:flex items-center gap-1 flex-1 justify-end">
@@ -271,13 +272,15 @@ export default function Header() {
 
         {/* Centered logo */}
         <div className="flex justify-center mb-8">
-          <Image
-            src="/cool-mountain-logistics/images/logo.png"
-            alt="Cool Mountain Logistics"
-            width={140}
-            height={60}
-            className="h-14 w-auto"
-          />
+          <ScrollToTopLink href="/" onClick={() => setMobileMenuOpen(false)}>
+            <Image
+              src="/cool-mountain-logistics/images/logo.png"
+              alt="Cool Mountain Logistics"
+              width={140}
+              height={60}
+              className="h-14 w-auto"
+            />
+          </ScrollToTopLink>
         </div>
 
         {/* Nav */}

@@ -191,7 +191,7 @@ export default function Header() {
             </nav>
 
             {/* ─── Center Logo ─── */}
-            <ScrollToTopLink href="https://saskij.github.io/cool-mountain-logistics/" className="relative z-10 shrink-0 -my-5 group">
+            <ScrollToTopLink href="https://saskij.github.io/Coolmountain/" className="relative z-10 shrink-0 -my-5 group">
               <div className={`
                 relative transition-all duration-500
                 ${scrolled ? 'h-16 w-28' : 'h-20 w-32'}
@@ -283,7 +283,7 @@ export default function Header() {
 
         {/* Centered logo */}
         <div className="flex justify-center mb-8">
-          <ScrollToTopLink href="https://saskij.github.io/cool-mountain-logistics/" onClick={() => setMobileMenuOpen(false)}>
+          <ScrollToTopLink href="https://saskij.github.io/Coolmountain/" onClick={() => setMobileMenuOpen(false)}>
             <Image
               src="/cool-mountain-logistics/images/logo.png"
               alt="Cool Mountain Logistics"

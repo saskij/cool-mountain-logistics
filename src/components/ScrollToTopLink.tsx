@@ -8,11 +8,15 @@ export default function ScrollToTopLink({
     className,
     children,
     onClick,
+    target,
+    rel,
 }: {
     href: string;
     className?: string;
     children: React.ReactNode;
     onClick?: () => void;
+    target?: string;
+    rel?: string;
 }) {
     const pathname = usePathname();
 
@@ -25,7 +29,7 @@ export default function ScrollToTopLink({
     };
 
     return (
-        <Link href={href} className={className} onClick={handleClick}>
+        <Link href={href} className={className} onClick={handleClick} target={target} rel={rel}>
             {children}
         </Link>
     );

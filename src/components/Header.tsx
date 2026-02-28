@@ -24,6 +24,7 @@ export default function Header() {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const logoHref = pathname === '/' ? 'https://saskij.github.io/Coolmountain/' : '/';
+  const isExternal = logoHref.startsWith('http');
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 20);
@@ -195,7 +196,12 @@ export default function Header() {
             </nav>
 
             {/* ─── Center Logo ─── */}
-            <ScrollToTopLink href={logoHref} className="relative z-10 shrink-0 -my-5 group">
+            <ScrollToTopLink
+              href={logoHref}
+              className="relative z-10 shrink-0 -my-5 group"
+              target={isExternal ? "_blank" : undefined}
+              rel={isExternal ? "noopener noreferrer" : undefined}
+            >
               <div className={`
                 relative transition-all duration-500
                 ${scrolled ? 'h-16 w-28' : 'h-20 w-32'}
@@ -287,7 +293,12 @@ export default function Header() {
 
         {/* Centered logo */}
         <div className="flex justify-center mb-8">
-          <ScrollToTopLink href={logoHref} onClick={() => setMobileMenuOpen(false)}>
+          <ScrollToTopLink
+            href={logoHref}
+            onClick={() => setMobileMenuOpen(false)}
+            target={isExternal ? "_blank" : undefined}
+            rel={isExternal ? "noopener noreferrer" : undefined}
+          >
             <Image
               src="/cool-mountain-logistics/images/logo.png"
               alt="Cool Mountain Logistics"

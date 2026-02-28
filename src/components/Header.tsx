@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import ScrollToTopLink from './ScrollToTopLink';
 
@@ -15,11 +16,14 @@ const servicesDropdown = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  const logoHref = pathname === '/' ? 'https://saskij.github.io/Coolmountain/' : '/';
 
   const handleScroll = useCallback(() => {
     setScrolled(window.scrollY > 20);
@@ -191,7 +195,7 @@ export default function Header() {
             </nav>
 
             {/* ─── Center Logo ─── */}
-            <ScrollToTopLink href="https://saskij.github.io/Coolmountain/" className="relative z-10 shrink-0 -my-5 group">
+            <ScrollToTopLink href={logoHref} className="relative z-10 shrink-0 -my-5 group">
               <div className={`
                 relative transition-all duration-500
                 ${scrolled ? 'h-16 w-28' : 'h-20 w-32'}
@@ -283,7 +287,7 @@ export default function Header() {
 
         {/* Centered logo */}
         <div className="flex justify-center mb-8">
-          <ScrollToTopLink href="https://saskij.github.io/Coolmountain/" onClick={() => setMobileMenuOpen(false)}>
+          <ScrollToTopLink href={logoHref} onClick={() => setMobileMenuOpen(false)}>
             <Image
               src="/cool-mountain-logistics/images/logo.png"
               alt="Cool Mountain Logistics"

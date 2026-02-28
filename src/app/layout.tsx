@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollToTopLink from "@/components/ScrollToTopLink";
+import ConditionalLogo from "@/components/ConditionalLogo";
 
 export const metadata: Metadata = {
   title: "Cool Mountain Logistics | Trusted Freight Brokerage",
@@ -42,15 +43,7 @@ export default function RootLayout({
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
               {/* Col 1 — About */}
               <div className="sm:col-span-2 lg:col-span-1">
-                <ScrollToTopLink href="https://saskij.github.io/Coolmountain/">
-                  <Image
-                    src="/cool-mountain-logistics/images/logo.png"
-                    alt="Cool Mountain Logistics"
-                    width={160}
-                    height={70}
-                    className="h-14 w-auto mb-5"
-                  />
-                </ScrollToTopLink>
+                <ConditionalLogo />
                 <p className="text-sm text-primary-300 leading-relaxed">
                   Your premier 3PL partner in the heart of Idaho, connecting
                   shippers with reliable capacity across the lower 48.
